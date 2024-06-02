@@ -13,7 +13,7 @@ Features
 Demo
 
 Check out our kali demo on YouTube: https://www.youtube.com/watch?v=FL76S2OocXE
-pentestbox os (not kali): https://www.youtube.com/watch?v=FhuHzXzBXnI
+or pentestbox os (not kali): https://www.youtube.com/watch?v=FhuHzXzBXnI
 
     Minimum of 4GB RAM
     512GB hard disk space
