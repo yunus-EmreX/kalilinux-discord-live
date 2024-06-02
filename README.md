@@ -1,4 +1,4 @@
-                                              #THE PROJECT IS CURRENTLY CLOSED TO THE PUBLIC#
+                                      #THE PROJECT IS CURRENTLY CLOSED TO THE PUBLIC#
 
 
 KaliBot: Kali Linux Discord Bot
