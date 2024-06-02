@@ -1,3 +1,6 @@
+                                              #THE PROJECT IS CURRENTLY CLOSED TO THE PUBLIC#
+
+
 KaliBot: Kali Linux Discord Bot
 
 Welcome to KaliBot! 🛡️
