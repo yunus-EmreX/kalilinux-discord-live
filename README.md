@@ -10,6 +10,11 @@ Features
     Easy setup with pre-installed Kali Linux-2024.1 LARGE distribution.
     Utilize OpenVPN installation to establish your own localhost connection.
 
+website
+
+     https://yunus-emrex.github.io/kalilinux-discord-live/kalibot.html
+     https://yunus-emrex.github.io/kalilinux-discord-live/
+
 Demo
 
 Check out our kali demo on YouTube: https://www.youtube.com/watch?v=FL76S2OocXE
