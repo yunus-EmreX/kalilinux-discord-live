@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KaliBot - Kali Linux Discord Bot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    p {
+      color: #666;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+    .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      z-index: 9999;
+    }
+    .popup-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to KaliBot! 🛡️</h1>
+    <p>KaliBot brings the power of Kali Linux to your Discord server. Designed for penetration testing and hacking enthusiasts.</p>
+    <p>Check out our demo:</p>
+    <a href="#" class="btn" id="kaliDemoBtn">Kali Demo</a>
+    <a href="#" class="btn" id="pentestBoxDemoBtn">PentestBox OS Demo</a>
+    <h2>System Specifications</h2>
+    <button class="btn" id="systemDataBtn">View System Data</button>
+  </div>
+
+  <!-- System Data Popup -->
+<div id="systemDataPopup" class="popup" style="display: none;">
+  <span class="popup-close" onclick="closePopup()">&times;</span>
+  <h2>System Specifications</h2>
+  <p>
+    <b>Operating System:</b><br>
+    Distribution: Kali GNU/Linux Rolling<br>
+    Release: 2024.1<br>
+    Kernel: Linux kali 6.6.15-amd64 #1 SMP PREEMPT_DYNAMIC Kali 6.6.15-2kali1 (2024-04-09) x86_64 GNU/Linux
+  </p>
+  <p>
+    <b>Disk Space Utilization:</b><br>
+    <pre>
+Filesystem     Size  Used Avail Use% Mounted on
+udev           1.9G     0  1.9G   0% /dev
+tmpfs          381M  1.5M  380M   1% /run
+/dev/sda2      456G   82G  351G  19% /
+tmpfs          1.9G     0  1.9G   0% /dev/shm
+tmpfs          5.0M  8.0K  5.0M   1% /run/lock
+efivarfs       120K   17K   99K  14% /sys/firmware/efi/efivars
+/dev/sda1      511M  152K  511M   1% /boot/efi
+tmpfs          381M  2.5M  379M   1% /run/user/0
+    </pre>
+  </p>
+  <p>
+    <b>Memory (RAM):</b><br>
+    Total: 3806 MB<br>
+    Used: 2525 MB<br>
+    Free: 631 MB<br>
+    Shared: 357 MB<br>
+    Buffer/Cache: 1235 MB<br>
+    Available: 1281 MB
+  </p>
+  <p>
+    <b>Swap:</b><br>
+    Total: 975 MB<br>
+    Used: 0 MB<br>
+    Free: 975 MB
+  </p>
+</div>
+
+  <script>
+    // Popup Functions
+    function openPopup(popupId) {
+      document.getElementById(popupId).style.display = "block";
+    }
+
+    function closePopup() {
+      document.getElementById('systemDataPopup').style.display = "none";
+    }
+
+    // Event Listeners
+    document.getElementById('kaliDemoBtn').addEventListener('click', function() {
+      window.open('https://www.youtube.com/watch?v=FL76S2OocXE', '_blank');
+    });
+
+    document.getElementById('pentestBoxDemoBtn').addEventListener('click', function() {
+      window.open('https://www.youtube.com/watch?v=FhuHzXzBXnI', '_blank');
+    });
+
+    document.getElementById('systemDataBtn').addEventListener('click', function() {
+      openPopup('systemDataPopup');
+    });
+  </script>
+</body>
+</html>
